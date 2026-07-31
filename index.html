@@ -1,59 +1,1033 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Mascotas CR | Tienda para Mascotas en Costa Rica</title>
 
-    <meta name="description" content="Mundo Mascotas CR ofrece alimentos, juguetes, accesorios y productos para el cuidado de perros y gatos en Costa Rica.">
+    <title>Mundo Mascotas CR | Todo para tu mascota</title>
 
-    <link rel="icon" href="favicon.ico">
+    <meta name="description"
+        content="Mundo Mascotas CR ofrece alimentos, accesorios, juguetes, camas, grooming y productos para el cuidado de perros y gatos en Costa Rica.">
+
+    <meta name="keywords"
+        content="mascotas, perros, gatos, alimento, juguetes, grooming, Costa Rica, veterinaria">
+
+    <meta name="author" content="Mundo Mascotas CR">
+
+    <link rel="icon" href="img/logo.png">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <header>
-    <img src="img/logo.png" alt="Logo Mundo Mascotas CR">
 
-    <h1>Mundo Mascotas CR</h1>
+    <div class="contenedor">
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="pages/nosotros.html">Nosotros</a>
-        <a href="pages/servicios.html">Productos</a>
-        <a href="pages/contacto.html">Contacto</a>
-    </nav>
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo Mundo Mascotas CR">
+
+            <h1>Mundo Mascotas CR</h1>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+
+                <li><a href="pages/productos.html">Productos</a></li>
+
+                <li><a href="pages/servicios.html">Servicios</a></li>
+
+                <li><a href="pages/contacto.html">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
 </header>
 
 <main>
 
 <section class="hero">
-    <h2>Todo para tu mascota en un solo lugar</h2>
 
-    <p>
-        Encuentra alimento, juguetes, accesorios, camas, correas y mucho más para consentir a tu mejor amigo.
-    </p>
-<section class="hero">
+    <div class="hero-texto">
 
-    <img src="img/banner.png" alt="Mundo Mascotas CR">
+        <h2>Todo lo que tu mascota necesita en un solo lugar</h2>
 
-    <h2>Todo para tu mascota en un solo lugar</h2>
+        <p>
 
-    <p>
-        Encuentra alimento, juguetes, accesorios, camas, correas y mucho más para consentir a tu mejor amigo.
-    </p>
+            En Mundo Mascotas CR encontrarás alimento premium,
+            juguetes, accesorios, camas, grooming, vacunas y
+            mucho más para consentir a tu mejor amigo.
+
+        </p>
+
+        <a href="pages/productos.html" class="boton">
+            Ver Productos
+        </a>
+
+    </div>
+
+    <div class="hero-imagen">
+
+        <img src="img/banner.png" alt="Banner Mundo Mascotas CR">
+
+    </div>
 
 </section>
 
+<!-- ================= PRODUCTOS DESTACADOS ================= -->
+
+<section class="productos">
+
+    <h2>Nuestros Productos Destacados</h2>
+
+    <p>
+        Descubre algunos de los productos favoritos de nuestros clientes.
+    </p>
+
+    <div class="contenedor-productos">
+
+        <article class="card">
+
+            <img src="img/alimento-perro.jpg" alt="Alimento para perros">
+
+            <h3>Alimento Premium Perros</h3>
+
+            <p>
+                Nutrición completa para perros de todas las edades.
+            </p>
+
+            <span class="precio">₡18 900</span>
+
+            <a href="pages/productos.html" class="btn-card">
+                Comprar
+            </a>
+
+        </article>
+
+        <article class="card">
+
+            <img src="img/alimento-gato.jpg" alt="Alimento para gatos">
+
+            <h3>Alimento Premium Gatos</h3>
+
+            <p>
+                Fórmula balanceada con vitaminas y minerales.
+            </p>
+
+            <span class="precio">₡16 500</span>
+
+            <a href="pages/productos.html" class="btn-card">
+                Comprar
+            </a>
+
+        </article>
+
+        <article class="card">
+
+            <img src="img/cama.jpg" alt="Cama para mascotas">
+
+            <h3>Cama Deluxe</h3>
+
+            <p>
+                Suave, cómoda y perfecta para el descanso de tu mascota.
+            </p>
+
+            <span class="precio">₡24 900</span>
+
+            <a href="pages/productos.html" class="btn-card">
+                Comprar
+            </a>
+
+        </article>
+
+        <article class="card">
+
+            <img src="img/collar.jpg" alt="Collar para perro">
+
+            <h3>Collar Ajustable</h3>
+
+            <p>
+                Material resistente y disponible en varios colores.
+            </p>
+
+            <span class="precio">₡6 900</span>
+
+            <a href="pages/productos.html" class="btn-card">
+                Comprar
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ================= CATEGORÍAS ================= -->
+
+<section class="categorias">
+
+    <h2>Categorías</h2>
+
+    <div class="grid-categorias">
+
+        <div class="categoria">
+
+            <img src="img/perros.jpg" alt="Perros">
+
+            <h3>Perros</h3>
+
+        </div>
+
+        <div class="categoria">
+
+            <img src="img/gatos.jpg" alt="Gatos">
+
+            <h3>Gatos</h3>
+
+        </div>
+
+        <div class="categoria">
+
+            <img src="img/juguetes.jpg" alt="Juguetes">
+
+            <h3>Juguetes</h3>
+
+        </div>
+
+        <div class="categoria">
+
+            <img src="img/accesorios.jpg" alt="Accesorios">
+
+            <h3>Accesorios</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROMOCIONES ================= -->
+
+<section class="promociones">
+
+    <h2>Promociones de la Semana</h2>
+
+    <div class="promo">
+
+        <h3>🐶 15% de descuento</h3>
+
+        <p>
+            En alimento premium para perros durante esta semana.
+        </p>
+
+    </div>
+
+    <div class="promo">
+
+        <h3>🐱 Envío Gratis</h3>
+
+        <p>
+            En compras mayores a ₡25 000 dentro de Costa Rica.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+
+<section class="servicios">
+
+    <h2>Servicios para tu mascota</h2>
+
+    <p>
+        Más que una tienda, somos aliados en el cuidado y bienestar
+        de tus mascotas.
+    </p>
+
+
+    <div class="contenedor-servicios">
+
+
+        <article class="servicio-card">
+
+            <img src="img/grooming.jpg" alt="Servicio de grooming">
+
+            <h3>Grooming</h3>
+
+            <p>
+                Baño, corte de pelo, limpieza de oídos
+                y cuidado especial para que tu mascota luzca increíble.
+            </p>
+
+            <a href="pages/servicios.html">
+                Conocer servicio
+            </a>
+
+        </article>
+
+
+
+        <article class="servicio-card">
+
+            <img src="img/veterinaria.jpg" alt="Consulta veterinaria">
+
+            <h3>Consulta Veterinaria</h3>
+
+            <p>
+                Atención preventiva, controles de salud
+                y recomendaciones para el cuidado de tu mascota.
+            </p>
+
+            <a href="pages/servicios.html">
+                Conocer servicio
+            </a>
+
+        </article>
+
+
+
+        <article class="servicio-card">
+
+            <img src="img/envio.jpg" alt="Entrega a domicilio">
+
+            <h3>Entrega a domicilio</h3>
+
+            <p>
+                Recibe tus productos favoritos sin salir de casa.
+                Entregamos en diferentes zonas de Costa Rica.
+            </p>
+
+            <a href="pages/servicios.html">
+                Conocer servicio
+            </a>
+
+        </article>
+
+
+
+        <article class="servicio-card">
+
+            <img src="img/desparasitacion.jpg" alt="Desparasitación">
+
+            <h3>Desparasitación</h3>
+
+            <p>
+                Productos especializados para mantener
+                la salud y protección de tus mascotas.
+            </p>
+
+            <a href="pages/servicios.html">
+                Conocer servicio
+            </a>
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ================= POR QUÉ ELEGIRNOS ================= -->
+
+
+<section class="beneficios">
+
+
+    <h2>¿Por qué elegir Mundo Mascotas CR?</h2>
+
+
+    <div class="grid-beneficios">
+
+
+        <div class="beneficio">
+
+            <span>🐾</span>
+
+            <h3>Amor por las mascotas</h3>
+
+            <p>
+                Trabajamos pensando en el bienestar
+                y felicidad de cada mascota.
+            </p>
+
+        </div>
+
+
+
+        <div class="beneficio">
+
+            <span>⭐</span>
+
+            <h3>Productos de calidad</h3>
+
+            <p>
+                Seleccionamos productos seguros,
+                resistentes y confiables.
+            </p>
+
+        </div>
+
+
+
+
+        <div class="beneficio">
+
+            <span>🚚</span>
+
+            <h3>Entrega rápida</h3>
+
+            <p>
+                Compra fácilmente y recibe tus productos
+                donde los necesites.
+            </p>
+
+        </div>
+
+
+
+
+        <div class="beneficio">
+
+            <span>💙</span>
+
+            <h3>Atención personalizada</h3>
+
+            <p>
+                Te ayudamos a elegir lo mejor
+                para tu compañero de vida.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= TESTIMONIOS ================= -->
+
+
+<section class="testimonios">
+
+
+<h2>Lo que dicen nuestros clientes</h2>
+
+
+
+<div class="contenedor-testimonios">
+
+
+<div class="testimonio">
+
+
+<p>
+"Excelente atención y productos de muy buena calidad.
+Mi perro ama sus juguetes nuevos."
+</p>
+
+
+<h3>
+- Laura Rodríguez
+</h3>
+
+
+</div>
+
+
+
+
+<div class="testimonio">
+
+
+<p>
+"Compré alimento para mi gato y llegó rápido.
+Muy recomendado."
+</p>
+
+
+<h3>
+- Carlos Méndez
+</h3>
+
+
+</div>
+
+
+
+
+<div class="testimonio">
+
+
+<p>
+"Me encantó el servicio de grooming.
+Mi mascota quedó hermosa."
+</p>
+
+
+<h3>
+- Andrea Vargas
+</h3>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= MARCAS ================= -->
+
+
+<section class="marcas">
+
+
+<h2>Trabajamos con marcas reconocidas</h2>
+
+
+
+<div class="lista-marcas">
+
+
+<div>
+🐶 Royal Canin
+</div>
+
+
+<div>
+🐾 Purina
+</div>
+
+
+<div>
+🐱 Whiskas
+</div>
+
+
+<div>
+⭐ Hill's
+</div>
+
+
+<div>
+🐕 Pedigree
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+<!-- ================= PREGUNTAS FRECUENTES ================= -->
+
+
+<section class="faq">
+
+
+<h2>Preguntas frecuentes</h2>
+
+
+
+<div class="faq-container">
+
+
+
+<div class="pregunta">
+
+
+<h3>
+¿Realizan entregas a domicilio?
+</h3>
+
+
+<p>
+Sí, realizamos entregas de productos para mascotas
+en diferentes zonas de Costa Rica.
+</p>
+
+
+</div>
+
+
+
+
+<div class="pregunta">
+
+
+<h3>
+¿Qué productos venden?
+</h3>
+
+
+<p>
+Contamos con alimento, juguetes, camas,
+accesorios, productos de higiene y mucho más.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="pregunta">
+
+
+<h3>
+¿Aceptan pagos por SINPE Móvil?
+</h3>
+
+
+<p>
+Sí, contamos con diferentes métodos de pago
+para facilitar tus compras.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="pregunta">
+
+
+<h3>
+¿Atienden perros y gatos?
+</h3>
+
+
+<p>
+Sí, tenemos productos y servicios especializados
+para perros, gatos y otras mascotas.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= CONTACTO RÁPIDO ================= -->
+
+
+<section class="contacto-home">
+
+
+<div class="contacto-info">
+
+
+<h2>
+¿Necesitas ayuda?
+</h2>
+
+
+<p>
+Nuestro equipo está listo para ayudarte
+a encontrar lo mejor para tu mascota.
+</p>
+
+
+<p>
+📱 WhatsApp:
+<strong>
++506 8888-8888
+</strong>
+</p>
+
+
+<p>
+📧 Correo:
+<strong>
+info@mundomascotascr.com
+</strong>
+</p>
+
+
+<p>
+📍 Costa Rica
+</p>
+
+
+
+<a href="pages/contacto.html" class="boton">
+Contactarnos
+</a>
+
+
+
+</div>
+
+
+
+<div class="contacto-formulario">
+
+
+<form>
+
+
+<label>
+Nombre
+</label>
+
+
+<input 
+type="text"
+placeholder="Ingrese su nombre"
+>
+
+
+
+
+<label>
+Correo electrónico
+</label>
+
+
+<input 
+type="email"
+placeholder="Ingrese su correo"
+>
+
+
+
+
+<label>
+Mensaje
+</label>
+
+
+<textarea
+placeholder="Escriba su mensaje">
+</textarea>
+
+
+
+<button type="submit">
+Enviar mensaje
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= REDES SOCIALES ================= -->
+
+
+<section class="redes">
+
+
+<h2>
+Síguenos en redes sociales
+</h2>
+
+
+
+<div class="redes-links">
+
+
+<a href="#">
+Facebook
+</a>
+
+
+<a href="#">
+Instagram
+</a>
+
+
+<a href="#">
+TikTok
+</a>
+
+
+<a href="#">
+WhatsApp
+</a>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
 </main>
 
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
 <footer>
-    <p>&copy; 2026 Mundo Mascotas CR. Todos los derechos reservados.</p>
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-col">
+
+
+<h3>
+Mundo Mascotas CR
+</h3>
+
+
+<p>
+Tu tienda de confianza para el cuidado,
+alimentación y bienestar de tus mascotas.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="footer-col">
+
+
+<h3>
+Enlaces rápidos
+</h3>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Inicio
+</a>
+</li>
+
+
+<li>
+<a href="pages/nosotros.html">
+Nosotros
+</a>
+</li>
+
+
+<li>
+<a href="pages/productos.html">
+Productos
+</a>
+</li>
+
+
+<li>
+<a href="pages/servicios.html">
+Servicios
+</a>
+</li>
+
+
+<li>
+<a href="pages/contacto.html">
+Contacto
+</a>
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-col">
+
+
+<h3>
+Horario
+</h3>
+
+
+<p>
+Lunes - Viernes
+<br>
+8:00 AM - 6:00 PM
+</p>
+
+
+<p>
+Sábado
+<br>
+9:00 AM - 4:00 PM
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-col">
+
+
+<h3>
+Contacto
+</h3>
+
+
+<p>
+📞 +506 8888-8888
+</p>
+
+
+<p>
+✉ info@mundomascotascr.com
+</p>
+
+
+<p>
+📍 Costa Rica
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+© 2026 Mundo Mascotas CR |
+Todos los derechos reservados.
+</p>
+
+
+
+</div>
+
+
+
 </footer>
+
+
+
+
+
+<!-- ================= BOTÓN WHATSAPP ================= -->
+
+
+<a 
+href="#"
+class="whatsapp"
+target="_blank">
+
+💬
+
+</a>
+
+
+
+
+
+<!-- ================= BOTÓN SUBIR ================= -->
+
+
+<button 
+id="btn-top">
+
+↑
+
+</button>
+
+
+
+
 
 <script src="js/script.js"></script>
 
+
+
 </body>
+
+
 </html>

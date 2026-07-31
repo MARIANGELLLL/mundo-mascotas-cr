@@ -1,58 +1,2093 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* =====================================
+   MUNDO MASCOTAS CR
+   ARCHIVO: styles.css
+   PARTE 1
+===================================== */
+
+
+/* ========= RESET GENERAL ========= */
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
-    color:#333;
+
+
+html {
+
+    scroll-behavior: smooth;
+
 }
 
-header{
-    background:#2e8b57;
-    color:white;
-    padding:20px;
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #ffffff;
+
+    color: #333;
+
+    line-height: 1.6;
+
 }
 
-nav{
-    margin-top:10px;
-}
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-right:20px;
-}
-
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
 
 img {
+
     max-width: 100%;
-    height: auto;
+
     display: block;
+
 }
 
-.hero img {
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+ul {
+
+    list-style: none;
+
+}
+
+
+
+
+/* ========= VARIABLES ========= */
+
+
+:root {
+
+
+    --principal: #2E7D32;
+
+    --secundario: #81C784;
+
+    --claro: #E8F5E9;
+
+    --amarillo: #FFC107;
+
+    --oscuro: #1B1B1B;
+
+    --blanco: #ffffff;
+
+    --gris: #666;
+
+
+}
+
+
+
+
+
+/* ========= CONTENEDOR GENERAL ========= */
+
+
+.contenedor {
+
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+
+}
+
+
+
+
+
+
+/* ========= HEADER ========= */
+
+
+header {
+
+
+    background: var(--blanco);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+
+
+}
+
+
+
+header .contenedor {
+
+
+    height: 90px;
+
+
+}
+
+
+
+
+/* ========= LOGO ========= */
+
+
+.logo {
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+
+}
+
+
+
+.logo img {
+
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+
+}
+
+
+
+.logo h1 {
+
+
+    font-size: 24px;
+
+    color: var(--principal);
+
+    font-weight: 700;
+
+
+}
+
+
+
+
+
+
+/* ========= MENU ========= */
+
+
+nav ul {
+
+
+    display: flex;
+
+    gap: 30px;
+
+
+}
+
+
+
+nav ul li a {
+
+
+    font-weight: 500;
+
+    color: #333;
+
+    transition: .3s;
+
+
+}
+
+
+
+nav ul li a:hover {
+
+
+    color: var(--principal);
+
+
+}
+
+
+
+
+
+
+
+/* ========= HERO ========= */
+
+
+.hero {
+
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+
+}
+
+
+
+
+
+.hero-texto h2 {
+
+
+    font-size: 45px;
+
+    color: var(--principal);
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+
+.hero-texto p {
+
+
+    font-size: 18px;
+
+    color: var(--gris);
+
+    margin-bottom: 30px;
+
+
+}
+
+
+
+
+.boton {
+
+
+    display: inline-block;
+
+    background: var(--principal);
+
+    color: white;
+
+    padding: 14px 35px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+
+}
+
+
+
+.boton:hover {
+
+
+    background: #1b5e20;
+
+    transform: translateY(-3px);
+
+
+}
+
+
+
+
+
+.hero-imagen img {
+
+
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+
 }
 
-.hero img {
+/* =====================================
+   PARTE 2
+   PRODUCTOS - CATEGORÍAS - PROMOCIONES
+===================================== */
+
+
+
+/* ========= TITULOS GENERALES ========= */
+
+
+section h2 {
+
+
+    text-align: center;
+
+    font-size: 35px;
+
+    color: var(--principal);
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+section > p {
+
+
+    text-align: center;
+
+    color: var(--gris);
+
+    margin-bottom: 40px;
+
+
+}
+
+
+
+
+
+
+
+/* ========= PRODUCTOS DESTACADOS ========= */
+
+
+.productos {
+
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 80px auto;
+
+
+}
+
+
+
+
+.contenedor-productos {
+
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+
+}
+
+
+
+
+
+
+.card {
+
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.10);
+
+    text-align: center;
+
+    transition: .3s;
+
+
+}
+
+
+
+.card:hover {
+
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+
+}
+
+
+
+.card img {
+
+
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+
+
 }
 
+
+
+
+.card h3 {
+
+
+    color: var(--principal);
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+
+
+}
+
+
+
+
+.card p {
+
+
+    color: var(--gris);
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+
+.precio {
+
+
+    display: block;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #E65100;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+.btn-card {
+
+
+    display: inline-block;
+
+    background: var(--amarillo);
+
+    color: #333;
+
+    padding: 10px 25px;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.btn-card:hover {
+
+
+    background: #ffb300;
+
+}
+
+
+
+
+
+/* ========= CATEGORIAS ========= */
+
+
+.categorias {
+
+
+    background: var(--claro);
+
+    padding: 70px 5%;
+
+
+}
+
+
+
+
+.grid-categorias {
+
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
+
+}
+
+
+
+
+
+.categoria {
+
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.categoria:hover {
+
+
+    transform: scale(1.05);
+
+
+}
+
+
+
+
+
+.categoria img {
+
+
+    height:150px;
+
+    width:150px;
+
+    margin:auto;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+
+}
+
+
+
+
+
+.categoria h3 {
+
+
+    margin-top:15px;
+
+    color:var(--principal);
+
+
+}
+
+
+
+
+
+
+
+/* ========= PROMOCIONES ========= */
+
+
+.promociones {
+
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+
+}
+
+
+
+
+.promo {
+
+
+    background:linear-gradient(
+    135deg,
+    #81C784,
+    #C8E6C9
+    );
+
+
+    padding:30px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+
+}
+
+
+
+.promo h3 {
+
+
+    font-size:28px;
+
+    color:#1B5E20;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.promo p {
+
+
+    color:#333;
+
+
+}
+
+
+
+
+
+
+/* ========= SERVICIOS ========= */
+
+
+.servicios {
+
+
+    background:#fafafa;
+
+    padding:80px 5%;
+
+
+}
+
+
+
+
+
+.contenedor-servicios {
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.servicio-card {
+
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.servicio-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+.servicio-card img {
+
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin:auto auto 15px;
+
+
+}
+
+
+
+
+
+.servicio-card h3 {
+
+
+    color:var(--principal);
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.servicio-card p {
+
+
+    font-size:14px;
+
+    color:var(--gris);
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.servicio-card a {
+
+
+    color:var(--principal);
+
+    font-weight:bold;
+
+
+}
+
+/* =====================================
+   PARTE 3
+   BENEFICIOS - TESTIMONIOS - FAQ
+   CONTACTO - FOOTER
+===================================== */
+
+
+
+
+
+/* ========= BENEFICIOS ========= */
+
+
+.beneficios {
+
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+
+}
+
+
+
+
+.grid-beneficios {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+
+}
+
+
+
+
+.beneficio {
+
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.beneficio:hover {
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+.beneficio span {
+
+
+    font-size:45px;
+
+    display:block;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.beneficio h3 {
+
+
+    color:var(--principal);
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.beneficio p {
+
+
+    color:var(--gris);
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ========= TESTIMONIOS ========= */
+
+
+.testimonios {
+
+
+    background:var(--claro);
+
+    padding:80px 5%;
+
+
+}
+
+
+
+
+
+.contenedor-testimonios {
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.testimonio {
+
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+.testimonio p {
+
+
+    font-style:italic;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.testimonio h3 {
+
+
+    color:var(--principal);
+
+
+}
+
+
+
+
+
+
+/* ========= MARCAS ========= */
+
+
+.marcas {
+
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+
+}
+
+
+
+
+
+.lista-marcas {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.lista-marcas div {
+
+
+    background:white;
+
+    padding:20px 35px;
+
+    border-radius:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    font-weight:600;
+
+    color:var(--principal);
+
+
+}
+
+
+
+
+
+
+
+
+/* ========= FAQ ========= */
+
+
+.faq {
+
+
+    background:#fafafa;
+
+    padding:80px 5%;
+
+
+}
+
+
+
+
+
+.faq-container {
+
+
+    max-width:900px;
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+.pregunta {
+
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.pregunta h3 {
+
+
+    color:var(--principal);
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.pregunta p {
+
+
+    color:var(--gris);
+
+
+}
+
+
+
+
+
+
+
+
+/* ========= CONTACTO ========= */
+
+
+.contacto-home {
+
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.contacto-info h2 {
+
+
+    text-align:left;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.contacto-info p {
+
+
+    text-align:left;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.contacto-formulario form {
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+
+
+}
+
+
+
+
+
+.contacto-formulario label {
+
+
+    display:block;
+
+    margin-bottom:5px;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-family:inherit;
+
+
+}
+
+
+
+
+.contacto-formulario textarea {
+
+
+    height:120px;
+
+    resize:none;
+
+
+}
+
+
+
+
+
+.contacto-formulario button {
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--principal);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.contacto-formulario button:hover {
+
+
+    background:#1b5e20;
+
+
+}
+
+
+
+
+
+
+
+
+/* ========= REDES SOCIALES ========= */
+
+
+.redes {
+
+
+    text-align:center;
+
+    padding:50px 5%;
+
+    background:var(--claro);
+
+
+}
+
+
+
+
+
+.redes-links {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+.redes-links a {
+
+
+    background:var(--principal);
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.redes-links a:hover {
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+/* ========= FOOTER ========= */
+
+
+footer {
+
+
+    background:#1B1B1B;
+
+    color:white;
+
+    padding:60px 5% 20px;
+
+
+}
+
+
+
+
+.footer-container {
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+
+}
+
+
+
+
+
+.footer-col h3 {
+
+
+    color:#81C784;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.footer-col p {
+
+
+    color:#ddd;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.footer-col ul li {
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.footer-col a {
+
+
+    color:#ddd;
+
+
+}
+
+
+
+
+.footer-col a:hover {
+
+
+    color:#81C784;
+
+
+}
+
+
+
+
+
+.footer-bottom {
+
+
+    text-align:center;
+
+    border-top:1px solid #444;
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    color:#ccc;
+
+
+}
+
+/* =====================================
+   PARTE 4 FINAL
+   RESPONSIVE - ANIMACIONES - BOTONES
+===================================== */
+
+
+
+
+
+/* ========= WHATSAPP FLOTANTE ========= */
+
+
+.whatsapp {
+
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    z-index:999;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+
+}
+
+
+
+.whatsapp:hover {
+
+
+    transform:scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+/* ========= BOTÓN SUBIR ========= */
+
+
+#btn-top {
+
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:100px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--principal);
+
+    color:white;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+
+}
+
+
+
+
+
+#btn-top:hover {
+
+
+    background:#1b5e20;
+
+
+}
+
+
+
+
+
+
+
+/* ========= ANIMACIONES ========= */
+
+
+@keyframes aparecer {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+.hero,
+.card,
+.servicio-card,
+.beneficio,
+.testimonio {
+
+
+    animation:aparecer 1s ease;
+
+
+}
+
+
+
+
+
+
+
+
+/* ========= TABLETS ========= */
+
+
+@media(max-width:1000px){
+
+
+
+.contenedor-productos {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.grid-categorias {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.contenedor-servicios {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.grid-beneficios {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.contenedor-testimonios {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.footer-container {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.hero {
+
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+
+}
+
+
+
+.hero-texto h2 {
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.contacto-home {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ========= CELULARES ========= */
+
+
+@media(max-width:700px){
+
+
+
+.contenedor {
+
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px 0;
+
+
+}
+
+
+
+
+header {
+
+
+    position:relative;
+
+
+}
+
+
+
+
+.logo h1 {
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+nav ul {
+
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+
+.hero {
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.hero-texto h2 {
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+.hero-texto p {
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+section h2 {
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+
+.contenedor-productos {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.grid-categorias {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.contenedor-servicios {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.grid-beneficios {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.lista-marcas {
+
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.lista-marcas div {
+
+
+    width:80%;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.contacto-home {
+
+
+    width:90%;
+
+    margin:50px auto;
+
+
+}
+
+
+
+
+.footer-container {
+
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.footer-col ul {
+
+
+    padding:0;
+
+
+}
+
+
+
+
+.whatsapp {
+
+
+    width:55px;
+
+    height:55px;
+
+    right:15px;
+
+    bottom:15px;
+
+
+}
+
+
+
+#btn-top {
+
+
+    right:15px;
+
+    bottom:80px;
+
+
+}
+
+
+
+}
