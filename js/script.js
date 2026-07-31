@@ -1,0 +1,1 @@
+console.log("Mundo Mascotas CR cargado correctamente.");
