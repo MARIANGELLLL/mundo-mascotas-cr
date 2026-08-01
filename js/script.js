@@ -298,3 +298,98 @@ footerTexto.innerHTML =
 
 
 }
+
+let carrito = [];
+
+const botonesCarrito = document.querySelectorAll(".agregar-carrito");
+
+const contador = document.getElementById("contador-carrito");
+
+const lista = document.getElementById("lista-carrito");
+
+const total = document.getElementById("total");
+
+const vaciar = document.getElementById("vaciar-carrito");
+
+
+botonesCarrito.forEach(boton=>{
+
+
+boton.addEventListener("click",()=>{
+
+
+let producto = {
+
+nombre: boton.dataset.producto,
+
+precio: Number(boton.dataset.precio)
+
+};
+
+
+carrito.push(producto);
+
+
+actualizarCarrito();
+
+
+});
+
+
+});
+
+
+
+function actualizarCarrito(){
+
+
+lista.innerHTML="";
+
+
+let suma=0;
+
+
+carrito.forEach(producto=>{
+
+
+let item=document.createElement("p");
+
+
+item.textContent =
+producto.nombre +
+" - ₡" +
+producto.precio;
+
+
+lista.appendChild(item);
+
+
+suma += producto.precio;
+
+
+});
+
+
+
+contador.textContent = carrito.length;
+
+
+total.textContent =
+"₡" + suma.toLocaleString();
+
+
+
+}
+
+
+
+
+vaciar.addEventListener("click",()=>{
+
+
+carrito=[];
+
+actualizarCarrito();
+
+
+});

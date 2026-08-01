@@ -2091,3 +2091,68 @@ section h2 {
 
 
 }
+
+
+.carrito{
+
+width:90%;
+
+max-width:900px;
+
+margin:80px auto;
+
+padding:40px;
+
+background:#E8F5E9;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+
+.carrito h2{
+
+color:#2E7D32;
+
+}
+
+
+#lista-carrito p{
+
+color:#666;
+
+margin:20px;
+
+}
+
+
+#vaciar-carrito{
+
+background:#d32f2f;
+
+color:white;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:25px;
+
+cursor:pointer;
+
+}
+
+
+#contador-carrito{
+
+background:#FFC107;
+
+padding:3px 8px;
+
+border-radius:50%;
+
+color:#333;
+
+}

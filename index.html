@@ -52,7 +52,13 @@
 
                 <li><a href="pages/servicios.html">Servicios</a></li>
 
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <<li><a href="pages/contacto.html">Contacto</a></li>
+
+                <li><a href="#carrito">
+                        🛒 Carrito
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
 
             </ul>
 
@@ -94,91 +100,141 @@
 
 <!-- ================= PRODUCTOS DESTACADOS ================= -->
 
+<!-- ================= PRODUCTOS DESTACADOS ================= -->
+
 <section class="productos">
 
-    <h2>Nuestros Productos Destacados</h2>
+<h2>Nuestros Productos Destacados</h2>
 
-    <p>
-        Descubre algunos de los productos favoritos de nuestros clientes.
-    </p>
+<p>
+Descubre algunos de los productos favoritos de nuestros clientes.
+</p>
 
-    <div class="contenedor-productos">
 
-        <article class="card">
+<div class="contenedor-productos">
 
-            <img src="img/alimento-perro.jpg" alt="Alimento para perros">
 
-            <h3>Alimento Premium Perros</h3>
+<article class="card">
 
-            <p>
-                Nutrición completa para perros de todas las edades.
-            </p>
+<img src="img/alimento-perro.jpg" alt="Alimento para perros">
 
-            <span class="precio">₡18 900</span>
+<h3>Alimento Premium Perros</h3>
 
-            <a href="pages/productos.html" class="btn-card">
-                Comprar
-            </a>
+<p>
+Nutrición completa para perros de todas las edades.
+</p>
 
-        </article>
+<span class="precio">₡18 900</span>
 
-        <article class="card">
 
-            <img src="img/alimento-gato.jpg" alt="Alimento para gatos">
+<button 
+class="btn-card agregar-carrito"
+data-producto="Alimento Premium Perros"
+data-precio="18900">
 
-            <h3>Alimento Premium Gatos</h3>
+🛒 Agregar
 
-            <p>
-                Fórmula balanceada con vitaminas y minerales.
-            </p>
+</button>
 
-            <span class="precio">₡16 500</span>
 
-            <a href="pages/productos.html" class="btn-card">
-                Comprar
-            </a>
+</article>
 
-        </article>
 
-        <article class="card">
 
-            <img src="img/cama.jpg" alt="Cama para mascotas">
 
-            <h3>Cama Deluxe</h3>
 
-            <p>
-                Suave, cómoda y perfecta para el descanso de tu mascota.
-            </p>
+<article class="card">
 
-            <span class="precio">₡24 900</span>
+<img src="img/alimento-gato.jpg" alt="Alimento para gatos">
 
-            <a href="pages/productos.html" class="btn-card">
-                Comprar
-            </a>
+<h3>Alimento Premium Gatos</h3>
 
-        </article>
+<p>
+Fórmula balanceada con vitaminas y minerales.
+</p>
 
-        <article class="card">
+<span class="precio">₡16 500</span>
 
-            <img src="img/collar.jpg" alt="Collar para perro">
 
-            <h3>Collar Ajustable</h3>
+<button 
+class="btn-card agregar-carrito"
+data-producto="Alimento Premium Gatos"
+data-precio="16500">
 
-            <p>
-                Material resistente y disponible en varios colores.
-            </p>
+🛒 Agregar
 
-            <span class="precio">₡6 900</span>
+</button>
 
-            <a href="pages/productos.html" class="btn-card">
-                Comprar
-            </a>
 
-        </article>
+</article>
 
-    </div>
+
+
+
+
+
+<article class="card">
+
+<img src="img/cama.jpg" alt="Cama para mascotas">
+
+<h3>Cama Deluxe</h3>
+
+<p>
+Suave, cómoda y perfecta para el descanso de tu mascota.
+</p>
+
+<span class="precio">₡24 900</span>
+
+
+<button 
+class="btn-card agregar-carrito"
+data-producto="Cama Deluxe"
+data-precio="24900">
+
+🛒 Agregar
+
+</button>
+
+
+</article>
+
+
+
+
+
+
+
+<article class="card">
+
+<img src="img/collar.jpg" alt="Collar para perro">
+
+<h3>Collar Ajustable</h3>
+
+<p>
+Material resistente y disponible en varios colores.
+</p>
+
+<span class="precio">₡6 900</span>
+
+
+<button 
+class="btn-card agregar-carrito"
+data-producto="Collar Ajustable"
+data-precio="6900">
+
+🛒 Agregar
+
+</button>
+
+
+</article>
+
+
+
+</div>
 
 </section>
+
 
 <!-- ================= CATEGORÍAS ================= -->
 
@@ -800,10 +856,14 @@ TikTok
 </a>
 
 
-<a href="#">
-WhatsApp
-</a>
+<a 
+href="https://wa.me/50664886336?text=Hola%20Mundo%20Mascotas%20CR,%20necesito%20información"
+class="whatsapp"
+target="_blank">
 
+💬
+
+</a>
 
 
 </div>
@@ -816,11 +876,44 @@ WhatsApp
 
 
 
+
+
+
 </main>
 
 
+<!-- ================= CARRITO ================= -->
+
+<section id="carrito" class="carrito">
+
+<h2>
+🛒 Tu carrito de compras
+</h2>
 
 
+<div id="lista-carrito">
+
+<p>
+No hay productos agregados.
+</p>
+
+</div>
+
+
+<h3>
+Total:
+<span id="total">
+₡0
+</span>
+</h3>
+
+
+<button id="vaciar-carrito">
+Vaciar carrito
+</button>
+
+
+</section>
 
 
 <!-- ================= FOOTER ================= -->
