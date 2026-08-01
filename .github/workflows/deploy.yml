@@ -7,14 +7,15 @@ on:
 
 jobs:
   web-deploy:
-    name: Desplegar sitio vía FTP
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Obtener código fuente
+
+      - name: Obtener código
         uses: actions/checkout@v4
 
-      - name: Sincronizar archivos vía FTP
+      - name: Subir archivos a InfinityFree
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -23,5 +24,3 @@ jobs:
           server-dir: /htdocs/
           protocol: ftp
           port: 21
-          timeout: 60000
-          dangerous-clean-slate: false
